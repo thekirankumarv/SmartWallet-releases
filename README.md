@@ -79,7 +79,7 @@ Needs Android 7.0 or newer on a 64-bit (arm64) phone, which covers almost every 
 - Bank, cash, wallet, credit card, fixed deposit and loan, plus your own types (gold, stocks…)
 - Live balances, net worth, and assets vs liabilities
 - Transfers between accounts, which never count as spending
-- Balance corrections are kept as adjustments, so history is never lost
+- Fix a wrong balance two ways: correct the opening amount, or add a dated adjustment entry, so history is never lost
 
 ### 💳 Credit cards
 - Limit, outstanding, available credit, utilisation, statement day and due day
@@ -107,7 +107,11 @@ Needs Android 7.0 or newer on a 64-bit (arm64) phone, which covers almost every 
 - Filter by date range, type, account, category and tags
 
 ### 💾 Backup & data
-- Back up to Google Drive (or anywhere) and restore on a new phone
+- **Automatic backup** to a folder you pick, after every change and when you leave the app: the latest copy plus one per day for a week. The folder stays when the app is uninstalled
+- **Google Drive sync (optional):** one sign-in, then a copy goes to a hidden SmartWallet folder in your Drive
+- **Android's Google backup** also covers your data and display settings; your Gemini key is never included
+- **Restore from backup** right on the home screen after a reinstall, or from Settings → Backup
+- **PDF statements** for any week, month, year or dates you pick, for all accounts or one. Share or print
 - Export to CSV for spreadsheets; import CSV from other apps, with duplicate detection
 - Every delete asks first
 
@@ -120,7 +124,8 @@ Needs Android 7.0 or newer on a 64-bit (arm64) phone, which covers almost every 
 - **Help & FAQ** built in, with search
 - **In-app updates:** a popup when a new version is out, installed in a couple of taps
 - **Send feedback** straight from Settings
-- Dark theme, haptic feedback, Indian number format (₹1,23,456.78)
+- **40 currencies** (Settings → Currency): ₹ with the Indian number format by default, $, €, £, AED and more
+- Dark theme, haptic feedback
 
 ## Screenshots
 
@@ -181,6 +186,18 @@ Needs Android 7.0 or newer on a 64-bit (arm64) phone, which covers almost every 
   <img src="screenshots/27-update.png" width="200" alt="Update available" />
 </p>
 
+### Backup, statements & currency
+<p>
+  <img src="screenshots/28-backup.png" width="200" alt="Automatic backup" />
+  <img src="screenshots/29-statement.png" width="200" alt="PDF statement options" />
+  <img src="screenshots/30-statement-pdf.png" width="200" alt="PDF statement" />
+  <img src="screenshots/33-balance-choice.png" width="200" alt="Fix a balance" />
+</p>
+<p>
+  <img src="screenshots/31-currency.png" width="200" alt="Pick a currency" />
+  <img src="screenshots/32-dollars.png" width="200" alt="Home in US dollars" />
+</p>
+
 <sub>Screenshots use sample data.</sub>
 
 ## Set up voice and bill scanning
@@ -197,7 +214,8 @@ The free tier is plenty for personal use and needs no card. The key is stored en
 
 - All your data lives in one file **on your phone**. There's no account, no server and no analytics.
 - Voice clips and bill photos go to Google Gemini **only when you use those features**, together with your account, category and tag names so it can match them. Balances and past transactions never leave your phone.
-- Backups go only where you choose to save them.
+- Backups go only where you choose: your backup folder, Android's Google backup, and (if you connect it) a hidden SmartWallet folder in your own Google Drive that the app can't see beyond.
+- Full [privacy policy](https://smartwalletapp.vercel.app/privacy/).
 
 ## Updates
 
@@ -220,7 +238,13 @@ It's distributed here on GitHub, so Android asks once for permission to install 
 <details>
 <summary><b>How do I move to a new phone?</b></summary>
 
-On the old phone: **Settings → Backup to Google Drive**. On the new phone: install SmartWallet, then **Settings → Restore backup** and pick the file. Add your Gemini key again, since keys aren't stored in backups.
+Keep a copy off the old phone: connect **Google Drive** in **Settings → Backup**, turn on Android's Google backup, or sync your backup folder to Drive. On the new phone install SmartWallet and tap **Restore from backup** on the home screen. Add your Gemini key again, since keys aren't stored in backups.
+</details>
+
+<details>
+<summary><b>Will I lose my data if I uninstall?</b></summary>
+
+Not if a backup folder is chosen in **Settings → Backup**. SmartWallet saves to it after every change, and the folder stays when the app is removed. Reinstall, tap **Restore from backup** and pick the same folder.
 </details>
 
 <details>
