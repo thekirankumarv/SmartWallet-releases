@@ -4,7 +4,7 @@
 
 # SmartWallet
 
-**Track every rupee in seconds. Tap, speak or scan a bill.**
+**Track every rupee in seconds. Tap, speak, scan a bill, or let your bank SMS do it.**
 
 An offline-first money manager for Android. Expenses, budgets, accounts, credit cards and loans, all stored on your phone. No sign-up, no ads, no server.
 
@@ -18,10 +18,10 @@ An offline-first money manager for Android. Expenses, budgets, accounts, credit 
 </div>
 
 <p align="center">
-  <img src="screenshots/01-transactions.png" width="200" alt="Transactions" />
-  <img src="screenshots/04-voice-guide.png" width="200" alt="Voice entry" />
-  <img src="screenshots/08-scan-review.png" width="200" alt="Bill scan" />
-  <img src="screenshots/10-stats.png" width="200" alt="Stats" />
+  <img src="screenshots/01-home.png" width="200" alt="Home" />
+  <img src="screenshots/06-ask-answer.png" width="200" alt="Ask SmartWallet" />
+  <img src="screenshots/13-bank-sms.png" width="200" alt="Bank SMS suggestions" />
+  <img src="screenshots/11-scan-review.png" width="200" alt="Bill scan" />
 </p>
 
 ## Contents
@@ -43,7 +43,36 @@ An offline-first money manager for Android. Expenses, budgets, accounts, credit 
 
 Needs Android 7.0 or newer on a 64-bit (arm64) phone, which covers almost every phone from the last several years.
 
+If **Play Protect** says *App blocked to protect your device* (it checks apps that can read SMS), open **Play Store → profile → Play Protect → ⚙ → turn off Scan apps with Play Protect**, install SmartWallet, then turn it back on. SMS are only read if you turn on bank SMS in Settings, and never leave your phone.
+
 ## Features
+
+### 🏠 Home
+- Net worth, what you saved this month, and spending against your monthly budget
+- **Month-end forecast** and **safe to spend per day**, worked out from your own pace
+- **Financial health score** (savings rate, emergency buffer, debt load, budgets) with the one thing to improve
+- **Smart insights:** unusual spends, categories running hot, subscriptions you may have forgotten
+- **Recurring payments** spotted automatically, with one tap to turn them into reminders
+- Coming up: bills and EMIs due in the next two weeks
+
+### ✨ Ask SmartWallet
+- Tap the glowing orb in the middle of the bottom bar and ask in plain words: *"food last month"*, *"compare with last month"*, *"can I afford 20k"*, *"my loans"*, *"subscriptions"*
+- Answers are worked out **on your phone** from your own entries, so they always match Home and Stats; the AI never does the maths
+- Type *"petrol 205"* or *"spent 250 on swiggy"* to add an entry
+- Only when your phone can't understand a question (and a Gemini key is set), the question text and your category and account names go to Gemini to work out what you meant
+
+### 💬 Bank SMS (Android)
+- Reads bank, card and UPI SMS **on your phone** and suggests entries: amount, account, shop and a category learned from your past entries
+- Nothing is saved until you tap ✓ or edit it; skipped SMS never come back
+- Ignores OTPs, balance alerts, bill reminders, payment requests, failed payments and offers
+- The bank SMS and the UPI app SMS for one payment show once; money moved between your own accounts becomes one transfer; payments you already entered aren't suggested again
+- Asks once which account a new card or account number belongs to
+- **Instant alerts (optional):** a notification like *"₹386 spent"* the moment the SMS arrives; tap it to review. The lock screen shows only "New bank SMS"
+
+### 🔒 App lock
+- Fingerprint, face or your phone's screen lock to open SmartWallet
+- Locks when you open the app and after you've been away for more than a minute
+- Your phone does the check; SmartWallet never sees your fingerprint or PIN
 
 ### ✍️ Transactions
 - Expense, income and transfer, with a built-in calculator keypad (`40+7`, `2×120`)
@@ -100,7 +129,7 @@ Needs Android 7.0 or newer on a 64-bit (arm64) phone, which covers almost every 
 
 ### 🙈 Hide amounts
 - **Eye button** hides every balance and total when someone can see your screen; tap one to peek for 3 seconds
-- Option to always start with amounts hidden
+- Option to always start with amounts hidden, and App lock on top
 
 ### 🔎 Search
 - Search notes, categories, accounts, tags and amounts
@@ -129,73 +158,89 @@ Needs Android 7.0 or newer on a 64-bit (arm64) phone, which covers almost every 
 
 ## Screenshots
 
+### Home & Ask SmartWallet
+<p>
+  <img src="screenshots/01-home.png" width="200" alt="Home" />
+  <img src="screenshots/05-ask.png" width="200" alt="Ask SmartWallet" />
+  <img src="screenshots/06-ask-answer.png" width="200" alt="Ask SmartWallet answer" />
+  <img src="screenshots/16-home-bank-sms.png" width="200" alt="Bank SMS to review on Home" />
+</p>
+
+### Bank SMS & app lock
+<p>
+  <img src="screenshots/13-bank-sms.png" width="200" alt="Bank SMS suggestions" />
+  <img src="screenshots/14-bank-sms-accounts.png" width="200" alt="Which account is this" />
+  <img src="screenshots/15-bank-sms-alert.png" width="200" alt="Instant alert" />
+  <img src="screenshots/17-app-lock.png" width="200" alt="App lock" />
+</p>
+
 ### Transactions
 <p>
-  <img src="screenshots/01-transactions.png" width="200" alt="Transactions" />
-  <img src="screenshots/02-add-transaction.png" width="200" alt="Add transaction" />
-  <img src="screenshots/03-hold-to-peek.png" width="200" alt="Hold to peek" />
-  <img src="screenshots/21-search.png" width="200" alt="Search" />
+  <img src="screenshots/02-transactions.png" width="200" alt="Transactions" />
+  <img src="screenshots/03-add-transaction.png" width="200" alt="Add transaction" />
+  <img src="screenshots/04-hold-to-peek.png" width="200" alt="Hold to peek" />
+  <img src="screenshots/29-search.png" width="200" alt="Search" />
 </p>
 
 ### Voice entry
 <p>
-  <img src="screenshots/04-voice-guide.png" width="200" alt="Voice guide while recording" />
-  <img src="screenshots/05-voice-review.png" width="200" alt="Check voice entries" />
-  <img src="screenshots/25-voice-settings.png" width="200" alt="Voice settings" />
+  <img src="screenshots/07-voice-guide.png" width="200" alt="Voice guide while recording" />
+  <img src="screenshots/08-voice-review.png" width="200" alt="Check voice entries" />
+  <img src="screenshots/33-voice-settings.png" width="200" alt="Voice settings" />
 </p>
 
 ### Bill scanning
 <p>
-  <img src="screenshots/06-scan-bill.png" width="200" alt="Scan bill" />
-  <img src="screenshots/07-scanning.png" width="200" alt="Reading the bill" />
-  <img src="screenshots/08-scan-review.png" width="200" alt="Bill items" />
-  <img src="screenshots/09-scanned-bills.png" width="200" alt="Scanned bills" />
+  <img src="screenshots/09-scan-bill.png" width="200" alt="Scan bill" />
+  <img src="screenshots/10-scanning.png" width="200" alt="Reading the bill" />
+  <img src="screenshots/11-scan-review.png" width="200" alt="Bill items" />
+  <img src="screenshots/12-scanned-bills.png" width="200" alt="Scanned bills" />
 </p>
 
 ### Stats & budgets
 <p>
-  <img src="screenshots/10-stats.png" width="200" alt="Monthly stats" />
-  <img src="screenshots/11-stats-categories.png" width="200" alt="Spending by category" />
-  <img src="screenshots/12-stats-yearly.png" width="200" alt="Yearly stats" />
-  <img src="screenshots/13-stats-tags.png" width="200" alt="Yearly categories" />
+  <img src="screenshots/18-stats.png" width="200" alt="Monthly stats" />
+  <img src="screenshots/19-stats-categories.png" width="200" alt="Categories, tags and budgets" />
+  <img src="screenshots/20-stats-yearly.png" width="200" alt="Yearly stats" />
+  <img src="screenshots/21-stats-breakdown.png" width="200" alt="Yearly breakdown" />
 </p>
 <p>
-  <img src="screenshots/14-budgets.png" width="200" alt="Category budgets" />
+  <img src="screenshots/22-budgets.png" width="200" alt="Category budgets" />
 </p>
 
 ### Accounts, cards & loans
 <p>
-  <img src="screenshots/15-accounts.png" width="200" alt="Accounts" />
-  <img src="screenshots/16-credit-cards.png" width="200" alt="Credit cards" />
-  <img src="screenshots/17-loans.png" width="200" alt="Loans" />
-  <img src="screenshots/18-account-history.png" width="200" alt="Account history" />
+  <img src="screenshots/23-accounts.png" width="200" alt="Accounts" />
+  <img src="screenshots/24-credit-cards.png" width="200" alt="Credit cards" />
+  <img src="screenshots/25-loans.png" width="200" alt="Loans" />
+  <img src="screenshots/26-account-history.png" width="200" alt="Account history" />
 </p>
 
 ### Reminders, tags & privacy
 <p>
-  <img src="screenshots/19-reminders.png" width="200" alt="Payment reminders" />
-  <img src="screenshots/20-tags.png" width="200" alt="Tags" />
-  <img src="screenshots/22-hidden-amounts.png" width="200" alt="Hidden amounts" />
+  <img src="screenshots/27-reminders.png" width="200" alt="Payment reminders" />
+  <img src="screenshots/28-tags.png" width="200" alt="Tags" />
+  <img src="screenshots/30-hidden-amounts.png" width="200" alt="Hidden amounts" />
+  <img src="screenshots/32-privacy-backup.png" width="200" alt="Privacy and backup settings" />
 </p>
 
 ### Settings, help & updates
 <p>
-  <img src="screenshots/23-settings.png" width="200" alt="Settings" />
-  <img src="screenshots/24-settings-more.png" width="200" alt="More settings" />
-  <img src="screenshots/26-help.png" width="200" alt="Help & FAQ" />
-  <img src="screenshots/27-update.png" width="200" alt="Update available" />
+  <img src="screenshots/31-settings.png" width="200" alt="Settings" />
+  <img src="screenshots/34-help.png" width="200" alt="Help & FAQ" />
+  <img src="screenshots/35-update.png" width="200" alt="Update available" />
+  <img src="screenshots/41-first-run.png" width="200" alt="First run" />
 </p>
 
 ### Backup, statements & currency
 <p>
-  <img src="screenshots/28-backup.png" width="200" alt="Automatic backup" />
-  <img src="screenshots/29-statement.png" width="200" alt="PDF statement options" />
-  <img src="screenshots/30-statement-pdf.png" width="200" alt="PDF statement" />
-  <img src="screenshots/33-balance-choice.png" width="200" alt="Fix a balance" />
+  <img src="screenshots/40-restore.png" width="200" alt="Restore from backup" />
+  <img src="screenshots/38-statement.png" width="200" alt="PDF statement" />
+  <img src="screenshots/39-balance-choice.png" width="200" alt="Fix a balance" />
+  <img src="screenshots/36-currency.png" width="200" alt="Pick a currency" />
 </p>
 <p>
-  <img src="screenshots/31-currency.png" width="200" alt="Pick a currency" />
-  <img src="screenshots/32-dollars.png" width="200" alt="Home in US dollars" />
+  <img src="screenshots/37-home-usd.png" width="200" alt="Home in US dollars" />
 </p>
 
 <sub>Screenshots use sample data.</sub>
@@ -214,6 +259,9 @@ The free tier is plenty for personal use and needs no card. The key is stored en
 
 - All your data lives in one file **on your phone**. There's no account, no server and no analytics.
 - Voice clips and bill photos go to Google Gemini **only when you use those features**, together with your account, category and tag names so it can match them. Balances and past transactions never leave your phone.
+- **Ask SmartWallet** answers on your phone. Only a question it can't understand goes to Gemini (if you've set a key), as the question text plus your category and account names; amounts and entries never do.
+- **Bank SMS** are read on your phone only, when you turn it on, and are never uploaded or sent to Gemini. Message text isn't stored or backed up.
+- **App lock** uses Android's own fingerprint and face prompt. SmartWallet never sees your fingerprint or PIN.
 - Backups go only where you choose: your backup folder, Android's Google backup, and (if you connect it) a hidden SmartWallet folder in your own Google Drive that the app can't see beyond.
 - Full [privacy policy](https://smartwalletapp.vercel.app/privacy/).
 
@@ -261,9 +309,33 @@ Date,Time,Type,Account,To Account,Category,Subcategory,Note,Amount,Tags
 </details>
 
 <details>
+<summary><b>Can SmartWallet add entries from my bank SMS?</b></summary>
+
+Yes. Turn on **Settings → Privacy → Suggest from bank SMS**. Each time you open the app it reads bank, card and UPI SMS from the last 30 days and shows them on Home as *bank SMS to review*. Nothing is saved until you tap ✓ or edit it. OTPs, balance alerts, bill reminders, failed payments and offers are ignored, and a payment reported by both your bank and your UPI app shows once. Turn on **Alert on new bank SMS** to get a notification the moment one arrives. SMS never leave your phone.
+</details>
+
+<details>
+<summary><b>Why does it ask for SMS permission?</b></summary>
+
+Only for the bank SMS feature, and only when you turn it on. Android shows it as "send and view SMS messages", but SmartWallet only reads; it never sends a message. If Android says the setting is restricted, open **App info → ⋮ → Allow restricted settings**, then allow SMS.
+</details>
+
+<details>
+<summary><b>Play Protect says the app is blocked. What do I do?</b></summary>
+
+Google Play Protect blocks some apps installed outside the Play Store if they can read SMS, to stop OTP-stealing scams. SmartWallet asks for SMS only for the optional bank SMS feature and never sends anything off your phone. To install: **Play Store → your profile → Play Protect → ⚙ → turn off Scan apps with Play Protect**, install or update SmartWallet, then turn it back on.
+</details>
+
+<details>
+<summary><b>Can I lock the app?</b></summary>
+
+Yes. **Settings → Privacy → App lock** asks for your fingerprint, face or screen lock when SmartWallet opens and after you've been away for more than a minute. It needs a screen lock set up on your phone.
+</details>
+
+<details>
 <summary><b>Does it work offline?</b></summary>
 
-Everything except voice entry, bill scanning and update checks works with no internet at all.
+Everything except voice entry, bill scanning, update checks and the rare Ask question that needs Gemini works with no internet at all. Bank SMS suggestions and alerts work offline.
 </details>
 
 <details>
