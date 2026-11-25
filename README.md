@@ -54,19 +54,28 @@ If **Play Protect** says *App blocked to protect your device* (it checks apps th
 - **Smart insights:** unusual spends, categories running hot, subscriptions you may have forgotten
 - **Recurring payments** spotted automatically, with one tap to turn them into reminders
 - Coming up: bills and EMIs due in the next two weeks
+- **Unusual spending:** an expense far above your usual, likely duplicate charges, and subscription price rises
+- **Year in review** in December and January: your year's totals, top categories, biggest expense, favourite shop and no-spend days
 
 ### ✨ Ask SmartWallet
-- Tap the glowing orb in the middle of the bottom bar and ask in plain words: *"food last month"*, *"compare with last month"*, *"can I afford 20k"*, *"my loans"*, *"subscriptions"*
+- Tap the glowing orb in the middle of the bottom bar, then type or **speak** your question in plain words
+- **Several things at once:** *"milk and curd"*, *"dairy and petrol"*, *"milk vs curd"*
+- **Follow-ups:** *"food this month"* → *"and last month?"* → *"only swiggy"*
+- **Patterns:** *"which weekday do I spend most"*, *"average daily spend on food"*, *"how many times swiggy"*, *"top 5 shops"*
+- **Entries:** *"what did I buy yesterday"*, *"last time I bought curd"*
+- **Why and what-if:** *"why did I spend more this month"*, *"if I cut food by 20%"*, *"save 1 lakh by March"*, *"when can I afford a 50k phone"*
+- **Never guesses:** if it doesn't recognise a word, it tells you instead of showing wrong numbers
 - Answers are worked out **on your phone** from your own entries, so they always match Home and Stats; the AI never does the maths
 - Type *"petrol 205"* or *"spent 250 on swiggy"* to add an entry
-- Only when your phone can't understand a question (and a Gemini key is set), the question text and your category and account names go to Gemini to work out what you meant
+- Only when your phone can't understand a question (and a Gemini key is set), the question text and your category, tag and account names go to Gemini to work out what you meant. It remembers those on your phone, so next time they work offline
 
 ### 💬 Bank SMS (Android)
 - Reads bank, card and UPI SMS **on your phone** and suggests entries: amount, account, shop and a category learned from your past entries
 - Nothing is saved until you tap ✓ or edit it; skipped SMS never come back
 - Ignores OTPs, balance alerts, bill reminders, payment requests, failed payments and offers
 - The bank SMS and the UPI app SMS for one payment show once; money moved between your own accounts becomes one transfer; payments you already entered aren't suggested again
-- Asks once which account a new card or account number belongs to
+- Asks once which account a new card or account number belongs to; change it any time under **Account numbers**
+- **Skip all** clears a long list after asking you to confirm
 - **Instant alerts (optional):** a notification like *"₹386 spent"* the moment the SMS arrives; tap it to review. The lock screen shows only "New bank SMS"
 
 ### 🔒 App lock
@@ -80,11 +89,12 @@ If **Play Protect** says *App blocked to protect your device* (it checks apps th
 - Today / Yesterday chips, or any date and time
 - **+ Next** to log several items in a row
 - Notes and colour-coded **tags** for shops, trips or festivals (`#SPAR`, `#Goa trip`, `#Diwali`)
+- **Shop memory:** type a note like "dmart" and the category you usually pick for it is filled in
 - **Hold to peek:** hold any entry to see its details without opening it
 - Swipe between months; entries grouped by day with daily totals
 
 ### 🎙️ Voice entry
-- Hold the mic, speak, let go
+- Hold the mic, speak, let go. Light runs around the guide card and colour glow rises from the bottom of the screen as you talk
 - The popup shows what to say and in which order: category, subcategory, amount, date, account, then a note and tag if you like
 - Say several entries in one go: *"Dairy, milk, 47, today, from cash. Vehicle, fuel, 205, yesterday, from card"*
 - Understands "yesterday", "last Friday", "on the 5th", and matches your own accounts, categories and tags
@@ -100,13 +110,15 @@ If **Play Protect** says *App blocked to protect your device* (it checks apps th
 ### 📊 Stats & budgets
 - Monthly and yearly income, expense and savings
 - Pie chart by category; tap one to see its subcategories and which account paid
-- Monthly budget per category with progress bars (green → amber → red)
+- Monthly budget per category with progress bars (green → amber → red), and a **notification at 80% and 100%**
+- **Net worth over time:** a 12-month chart of what you own minus what you owe
 - Month-by-month bars for the year
 - Spend per tag; tap a tag to see its transactions
 
 ### 🏦 Accounts
 - Bank, cash, wallet, credit card, fixed deposit and loan, plus your own types (gold, stocks…)
-- Live balances, net worth, and assets vs liabilities
+- Live balances, net worth, and assets vs liabilities, each account type in its own neon colour
+- **Net worth = assets − owed.** Assets are your bank, cash, wallet, FD and other balances; owed is what's left on loans and unpaid card bills. Card limits never count
 - Transfers between accounts, which never count as spending
 - Fix a wrong balance two ways: correct the opening amount, or add a dated adjustment entry, so history is never lost
 
@@ -120,12 +132,18 @@ If **Play Protect** says *App blocked to protect your device* (it checks apps th
 - Outstanding amount, % repaid and expected payoff month
 - **Pay EMI** in one tap; interest is added each month automatically (reducing balance)
 - Reports show EMI and interest separately
+- **Pay-extra planner:** see how many months earlier a loan closes and the interest you save by paying a little more each month
 
 ### ⏰ Payment reminders
 - Rent, bills, card dues, EMIs, insurance: repeat every few days, weeks, months or years
 - Notifications before the due date and on the day
 - **Pay** opens a pre-filled entry; saving marks the reminder paid
 - Overdue payments show as a banner on the home screen
+
+### 📲 Widget & shortcuts
+- **Home-screen widget:** safe to spend today and spent this month, with a + button to add an entry
+- **App icon shortcuts:** long-press the icon for Add expense, Ask or Scan bill
+- Slide along the bottom bar to switch tabs
 
 ### 🙈 Hide amounts
 - **Eye button** hides every balance and total when someone can see your screen; tap one to peek for 3 seconds
@@ -259,7 +277,7 @@ The free tier is plenty for personal use and needs no card. The key is stored en
 
 - All your data lives in one file **on your phone**. There's no account, no server and no analytics.
 - Voice clips and bill photos go to Google Gemini **only when you use those features**, together with your account, category and tag names so it can match them. Balances and past transactions never leave your phone.
-- **Ask SmartWallet** answers on your phone. Only a question it can't understand goes to Gemini (if you've set a key), as the question text plus your category and account names; amounts and entries never do.
+- **Ask SmartWallet** answers on your phone. Only a question it can't understand goes to Gemini (if you've set a key), as the question text plus your category, tag and account names; amounts and entries never do. Spoken questions use Android's own speech service.
 - **Bank SMS** are read on your phone only, when you turn it on, and are never uploaded or sent to Gemini. Message text isn't stored or backed up.
 - **App lock** uses Android's own fingerprint and face prompt. SmartWallet never sees your fingerprint or PIN.
 - Backups go only where you choose: your backup folder, Android's Google backup, and (if you connect it) a hidden SmartWallet folder in your own Google Drive that the app can't see beyond.
@@ -315,9 +333,27 @@ Yes. Turn on **Settings → Privacy → Suggest from bank SMS**. Each time you o
 </details>
 
 <details>
+<summary><b>How does Ask SmartWallet work?</b></summary>
+
+Your phone reads the question and matches each word to your categories, subcategories, tags, accounts, entry notes and dates. If it understood every word, it works out the answer on your phone, with no internet. If a word is unclear and you've added a Gemini key, only the question text and your category, tag and account names go to Gemini to work out what you meant; the numbers are still calculated on your phone. If it still can't tell, it says what it didn't understand instead of guessing. It can only find what's in your data, so add shop or item names as notes when you log entries.
+</details>
+
+<details>
+<summary><b>What is net worth, and what are assets and owed?</b></summary>
+
+**Net worth = assets − owed.** Assets are the balances of your bank, cash, wallet, fixed deposit and your own account types like gold. Owed (liabilities) is what you still have to pay back: what's left on each loan and the unpaid amount on each credit card. Your card limit never counts. Example: bank 80,000 + cash 5,000 + FD 50,000 = 1,35,000 assets; car loan 40,000 + card bill 15,000 = 55,000 owed; net worth = 80,000.
+</details>
+
+<details>
+<summary><b>How do I add the home-screen widget?</b></summary>
+
+Long-press an empty spot on your home screen → **Widgets** → SmartWallet, and drag it out. It shows how much is safe to spend today and what you've spent this month, with a + button to add an entry. It updates whenever you open the app or change an entry, and shows •••• when amounts are hidden.
+</details>
+
+<details>
 <summary><b>Why does it ask for SMS permission?</b></summary>
 
-Only for the bank SMS feature, and only when you turn it on. Android shows it as "send and view SMS messages", but SmartWallet only reads; it never sends a message. If Android says the setting is restricted, open **App info → ⋮ → Allow restricted settings**, then allow SMS.
+Only for the bank SMS feature, and only when you turn it on. Android shows it as "send and view SMS messages", but SmartWallet only reads; it never sends a message. If the SMS permission is greyed out or says "restricted setting": open **App info → Permissions → SMS**, tap the greyed-out Allow and then OK. Go back to App info, tap **⋮ → Allow restricted settings** and confirm, then allow SMS.
 </details>
 
 <details>
@@ -335,7 +371,7 @@ Yes. **Settings → Privacy → App lock** asks for your fingerprint, face or sc
 <details>
 <summary><b>Does it work offline?</b></summary>
 
-Everything except voice entry, bill scanning, update checks and the rare Ask question that needs Gemini works with no internet at all. Bank SMS suggestions and alerts work offline.
+Everything except voice entry, bill scanning, update checks and the rare Ask question that needs Gemini works with no internet at all. Bank SMS suggestions, alerts and the widget work offline.
 </details>
 
 <details>
