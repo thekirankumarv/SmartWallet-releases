@@ -155,7 +155,7 @@ If **Play Protect** says *App blocked to protect your device* (it checks apps th
 
 ### 💾 Backup & data
 - **Automatic backup** to a folder you pick, after every change and when you leave the app: the latest copy plus one per day for a week. The folder stays when the app is uninstalled
-- **Google Drive sync (optional):** one sign-in, then a copy goes to a hidden SmartWallet folder in your Drive
+- **Google Drive sync (optional):** one sign-in, then a copy goes to a hidden SmartWallet folder in your Drive. Sync now, Restore and Disconnect sit in one row
 - **Android's Google backup** also covers your data and display settings; your Gemini key is never included
 - **Restore from backup** right on the home screen after a reinstall, or from Settings → Backup
 - **PDF statements** for any week, month, year or dates you pick, for all accounts or one. Share or print
@@ -289,7 +289,7 @@ The free tier is plenty for personal use and needs no card. The key is stored en
 - **Bank SMS** are read on your phone only, when you turn it on, and are never uploaded or sent to Gemini. Message text isn't stored or backed up.
 - **App lock** uses Android's own fingerprint and face prompt. SmartWallet never sees your fingerprint or PIN.
 - Backups go only where you choose: your backup folder, Android's Google backup, and (if you connect it) a hidden SmartWallet folder in your own Google Drive that the app can't see beyond.
-- Full [privacy policy](https://smartwalletapp.vercel.app/privacy/).
+- Full [privacy policy](https://smartwalletapp.vercel.app/privacy/), also linked from **Settings → Help → Privacy policy**.
 
 ## Updates
 
