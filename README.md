@@ -184,6 +184,12 @@ If **Play Protect** says *App blocked to protect your device* (it checks apps th
   <img src="screenshots/16-home-bank-sms.png" width="200" alt="Bank SMS to review on Home" />
 </p>
 
+### Widget & shortcuts
+<p>
+  <img src="screenshots/44-widget.png" width="200" alt="Home-screen widget" />
+  <img src="screenshots/45-shortcuts.png" width="200" alt="App icon shortcuts" />
+</p>
+
 ### Bank SMS & app lock
 <p>
   <img src="screenshots/13-bank-sms.png" width="200" alt="Bank SMS suggestions" />
@@ -249,7 +255,7 @@ If **Play Protect** says *App blocked to protect your device* (it checks apps th
   <img src="screenshots/31-settings.png" width="200" alt="Settings" />
   <img src="screenshots/34-help.png" width="200" alt="Help & FAQ" />
   <img src="screenshots/35-update.png" width="200" alt="Update available" />
-  <img src="screenshots/41-first-run.png" width="200" alt="First run" />
+  <img src="screenshots/41-first-run.png" width="200" alt="Back up before first use" />
 </p>
 
 ### Backup, statements & currency
