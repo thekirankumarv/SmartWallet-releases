@@ -224,13 +224,15 @@ If **Play Protect** says *App blocked to protect your device* (it checks apps th
 </p>
 <p>
   <img src="screenshots/22-budgets.png" width="200" alt="Category budgets" />
+  <img src="screenshots/42-net-worth.png" width="200" alt="Net worth over 12 months" />
+  <img src="screenshots/43-year-review.png" width="200" alt="Year in review" />
 </p>
 
 ### Accounts, cards & loans
 <p>
   <img src="screenshots/23-accounts.png" width="200" alt="Accounts" />
   <img src="screenshots/24-credit-cards.png" width="200" alt="Credit cards" />
-  <img src="screenshots/25-loans.png" width="200" alt="Loans" />
+  <img src="screenshots/25-loans.png" width="200" alt="Loans and pay-extra planner" />
   <img src="screenshots/26-account-history.png" width="200" alt="Account history" />
 </p>
 
